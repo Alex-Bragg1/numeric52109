@@ -5,12 +5,6 @@ except ImportError:
     plt = None
     print("Warning: Matplotlib is not installed. Plotting functions will not work.")
 
-# Import the statistics module to use its functions (e.g., _validate_input)
-# Assuming 'simple_package' is the parent folder
-# from . import statistics # This relative import works best inside the package structure
-
-# Since we can't easily do a relative import here without running it inside the package, 
-# for testing simplicity, we'll assume the statistics functions are available or passed in.
 
 def plot_histogram_with_stats(data, mean_val, median_val):
     """

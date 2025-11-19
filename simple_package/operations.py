@@ -1,8 +1,7 @@
 ###
 ## simple_package - Module operations.py
 ## Basic online calculator
-###
-
+##
 ## Here I have defined four functions for the four
 ## basic operations. 
 ##
@@ -97,11 +96,11 @@ def run_calculator():
                 raise ValueError(f"Unknown command: {function_name}")
 
         except ValueError as e:
-            print(f"🛑 Error: Invalid input or operation: {e}")
+            print(f" Error: Invalid input or operation: {e}")
         except TypeError:
-            print("🛑 Error: Incorrect number of arguments provided for the function.")
+            print(" Error: Incorrect number of arguments provided for the function.")
         except Exception as e:
-            print(f"🛑 An unexpected error occurred: {e}")
+            print(f" An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     run_calculator()
