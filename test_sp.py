@@ -14,8 +14,7 @@ if __name__ == '__main__':
     print(f"The sum of {a} and {b} is {a + b}")
 
     ## Now do the same for the function in sp
-    print(f"The product of {a} and {b} is {op.multiply(a,b)}")
-    
+    print(f"The product of {a} and {b} is {op.multiply(a,b)}")   
     
     
     # Testing the calculator app 
@@ -29,7 +28,8 @@ if __name__ == '__main__':
     import numpy as np
 
     # Sample data
-    test_data = np.random.normal(size= 1000)
+    rng = np.random.default_rng(42)
+    test_data = rng.normal(size= 1000)
 
     try:
         # 1. Calculate stats and display results (Requirement 1 & 2)
